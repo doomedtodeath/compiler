@@ -1,0 +1,101 @@
+<!--<div style="display: flex">-->
+<!--  <div>Problem Question</div>-->
+<!--  <div>-->
+<!--    <ngx-codemirror id="codemirrorID"-->
+<!--                    [options]="codeMirrorOptions"-->
+<!--                    [ngModel]="obj"-->
+<!--                    (ngModelChange)="setEditorContent($event)">-->
+<!--    </ngx-codemirror>-->
+<!--    <ng-template [ngIf]="data.length > 0">-->
+<!--      <ng-template [ngIf]="errorcomplile === 0" [ngIfElse]="errorTemplate">-->
+<!--        <div-->
+<!--          style="background-color: #46a35e; color: white; padding: 2rem">-->
+
+<!--          <h2>Compiled Succesfully</h2>-->
+<!--          <span>Output - <br></span>-->
+<!--          <pre style="width: 50%;">{{data}}</pre>-->
+<!--          <span>-->
+<!--        <p>Result</p>-->
+<!--        <mat-list>-->
+<!--          <mat-list-item *ngFor="let i of testCases['passed']" style="color: darkgreen">Testcase No. - {{i + 1}}-->
+<!--            : Passed</mat-list-item>-->
+<!--          <mat-divider></mat-divider>-->
+<!--        </mat-list>-->
+<!--        <mat-list>-->
+<!--          <mat-list-item *ngFor="let i of testCases['failed']" style="color: crimson">Testcase No. - {{i + 1}}-->
+<!--            : Failed</mat-list-item>-->
+<!--          <mat-divider></mat-divider>-->
+<!--        </mat-list>-->
+<!--        <span>-->
+<!--          Total Testcase Passed: {{testCases['passed'].length}}-->
+<!--          /{{testCases['passed'].length + testCases['failed'].length}}-->
+<!--        </span>-->
+<!--        <span>-->
+<!--          Total Testcase Failed: {{testCases['failed'].length}}-->
+<!--          /{{testCases['passed'].length + testCases['failed'].length}}-->
+<!--        </span>-->
+<!--      </span>-->
+
+<!--        </div>-->
+<!--      </ng-template>-->
+<!--      <ng-template #errorTemplate>-->
+<!--        <div-->
+<!--          style="display: flex; align-items: center; flex-direction: column; background-color: red; color: white; padding: 2rem">-->
+
+<!--          <h2>Compile Failed</h2>-->
+<!--          <span>Output - <br></span>-->
+<!--          <span style="width: 50%;white-space: pre-line">{{data}}</span>-->
+
+<!--        </div>-->
+<!--      </ng-template>-->
+
+<!--    </ng-template>-->
+<!--  </div>-->
+<!--  <div style="height: 6vh">-->
+<!--    <button mat-raised-button color="primary" (click)="runCode('run')"-->
+<!--            style="width: 86%; height: 3.2rem; border-radius: 0px">-->
+<!--      Run-->
+<!--    </button>-->
+<!--    <button mat-raised-button color="primary" (click)="runCode('submit')"-->
+<!--            style="width: 86%; height: 3.2rem; border-radius: 0px">-->
+<!--      Submit-->
+<!--    </button>-->
+<!--    <div style="width: 25%">-->
+<!--      &lt;!&ndash;    <mat-form-field appearance="fill">&ndash;&gt;-->
+<!--      &lt;!&ndash;      <mat-label>Select Language</mat-label>&ndash;&gt;-->
+<!--      &lt;!&ndash;      <mat-select [(ngModel)]="selectedlang" bind-value="selectedlang.value" bind-aria-label="selectedlang.key" [items]>&ndash;&gt;-->
+<!--      &lt;!&ndash;        <mat-option *ngFor="let langs of langsAvailable" [value]="langs">&ndash;&gt;-->
+<!--      &lt;!&ndash;          {{langs}}&ndash;&gt;-->
+<!--      &lt;!&ndash;        </mat-option>&ndash;&gt;-->
+<!--      &lt;!&ndash;      </mat-select>&ndash;&gt;-->
+<!--      &lt;!&ndash;    </mat-form-field>&ndash;&gt;-->
+<!--      <ng-select [items]="langsAvailable" [(ngModel)]="selectedlang" bindLabel="key" placeholder="Select Language"-->
+<!--                 (change)="langChange()"></ng-select>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <mat-form-field class="example-full-width" appearance="fill">-->
+<!--    <mat-label>Input</mat-label>-->
+<!--    <textarea matInput></textarea>-->
+<!--  </mat-form-field>-->
+<!--</div>-->
+<div style="display: flex; justify-content: space-between">
+  <div style="width: 50%">
+    <div style="padding: 2rem">
+      <h2>Program for printing pyramid patterns in Python</h2><br>
+      <span>
+        <strong>Difficulty Level : Easy</strong><br>
+        Patterns can be printed in python using simple for loops. First outer loop is used to handle number of rows and Inner nested loop is used to handle the number of columns. Manipulating the print statements, different number patterns, alphabet patterns or star patterns can be printed.
+      </span>
+      <pre>
+        *
+        * *
+        * * *
+        * * * *
+        * * * * *
+      </pre>
+    </div>
+  </div>
+  <div style="width: 50%">
+    <app-compilerinput></app-compilerinput>
+  </div>
+</div>

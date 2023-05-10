@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~codemirror/lib/codemirror.css';
+@import '~codemirror/theme/material.css';
+@import "~@ng-select/ng-select/themes/material.theme.css";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.ng-value-container{
+  margin-left: 10px;
+}
+.CodeMirror{
+  width: 100%;
+  resize: vertical;
+  overflow: auto !important;
+  max-height: 100vh;
+  height: 50vh;
+}
+
+.ng-value-container{
+  color:white;
+  border-top: 0px !important;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.custom:hover{
+  background-color: #182125;
+}
+
+.ng-clear-wrapper{
+  display: none;
+}
+
+.ng-select .ng-arrow-wrapper .ng-arrow{
+  color: white;
+}
+
+/*.ng-select .ng-select-container{*/
+/*  align-items: center;*/
+/*}*/
+.ng-select .ng-select-container:after{
+  border: 0px;
+}
+
+.ng-select.custom {
+  border:0px;
+  min-height: 0px;
+  border-radius: 0;
+}
+.ng-select.custom .ng-select-container  {
+  min-height: 0px;
+  border-radius: 0;
+}
+
+/*::-webkit-resizer {*/
+/*  border: 2px solid black;*/
+/*  background: red;*/
+/*  box-shadow: 0 0 5px 5px blue;*/
+/*  outline: 2px solid yellow;*/
+/*}*/

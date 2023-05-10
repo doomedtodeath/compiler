@@ -1,0 +1,19 @@
+#resultTextarea{
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  border: 0px;
+  resize: none
+}
+#resultTextarea:focus{
+  border: 0px;
+  outline: none;
+}
+
+.buttonCode:hover{
+  background-color: #182125;
+  border-radius: 0px;
+}
+
+
+
